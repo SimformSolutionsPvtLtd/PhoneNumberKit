@@ -4,7 +4,7 @@ target 'Sample' do
   use_frameworks!
 
   # Pods for Sample
-  pod 'PhoneNumberKit', :path => '../..'
+  pod 'PhoneNumberKit', :git => "https://github.com/SimformSolutionsPvtLtd/PhoneNumberKit.git", :branch => 'feature/ondex'
 
   target 'SampleTests' do
     inherit! :search_paths

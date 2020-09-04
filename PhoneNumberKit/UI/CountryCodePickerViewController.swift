@@ -88,8 +88,9 @@ public class CountryCodePickerViewController: UITableViewController {
 
     func commonInit() {
         self.title = NSLocalizedString("PhoneNumberKit.CountryCodePicker.Title", value: "Choose your country", comment: "Title of CountryCodePicker ViewController")
-
-        tableView.register(CountryPickerTableViewCell.self, forCellReuseIdentifier: CountryPickerTableViewCell.reuseIdentifier)
+        let bundle = Bundle(for: self.classForCoder)
+        let nib = UINib.init(nibName: "CountryPickerTableViewCell", bundle: bundle)
+        tableView.register(nib, forCellReuseIdentifier: CountryPickerTableViewCell.reuseIdentifier)
         searchController.searchResultsUpdater = self
         searchController.obscuresBackgroundDuringPresentation = false
         searchController.searchBar.backgroundColor = .clear
@@ -106,6 +107,7 @@ public class CountryCodePickerViewController: UITableViewController {
         if let nav = navigationController, nav.isBeingPresented && nav.viewControllers.count == 1 {
             navigationItem.setRightBarButton(cancelButton, animated: true)
         }
+         self.extendedLayoutIncludesOpaqueBars = true
     }
 
     public override func viewWillDisappear(_ animated: Bool) {
@@ -132,9 +134,9 @@ public class CountryCodePickerViewController: UITableViewController {
     public override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: CountryPickerTableViewCell.reuseIdentifier, for: indexPath) as? CountryPickerTableViewCell
         let country = self.country(for: indexPath)
-        cell?.lblCountryCode.text = country.prefix
+        cell?.lblCountryCode.text = country.flag
         cell?.lblCountryName.text = country.name
-        cell?.flag.text = country.flag
+        cell?.flag.text = country.prefix
         return cell!
     }
 

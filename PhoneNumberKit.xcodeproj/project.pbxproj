@@ -76,8 +76,18 @@
 		C6DF6CDE1D1B18D800259F4B /* PhoneNumberKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346922681BC023A60023482F /* PhoneNumberKit.swift */; };
 		C6DF6CDF1D1B18D800259F4B /* PhoneNumberParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342418811BB70F5200EE70E7 /* PhoneNumberParser.swift */; };
 		C6DF6CE01D1B18D800259F4B /* RegexManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34566C991BC112C500715E6B /* RegexManager.swift */; };
-		C92BAF2725028D24001E0B8D /* CountryPickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92BAF2525028D24001E0B8D /* CountryPickerTableViewCell.swift */; };
-		C92BAF2825028D24001E0B8D /* CountryPickerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C92BAF2625028D24001E0B8D /* CountryPickerTableViewCell.xib */; };
+		C913C439250295FF00612E04 /* CountryPickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C913C435250293CE00612E04 /* CountryPickerTableViewCell.swift */; };
+		C913C43D25029ACF00612E04 /* CountryPickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C913C435250293CE00612E04 /* CountryPickerTableViewCell.swift */; };
+		C913C43E25029ACF00612E04 /* CountryPickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C913C435250293CE00612E04 /* CountryPickerTableViewCell.swift */; };
+		C913C43F25029AD200612E04 /* CountryPickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C913C435250293CE00612E04 /* CountryPickerTableViewCell.swift */; };
+		C913C4482502A0E500612E04 /* CountryPickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C913C4462502A0E400612E04 /* CountryPickerTableViewCell.swift */; };
+		C913C4492502A0E500612E04 /* CountryPickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C913C4462502A0E400612E04 /* CountryPickerTableViewCell.swift */; };
+		C913C44A2502A0E500612E04 /* CountryPickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C913C4462502A0E400612E04 /* CountryPickerTableViewCell.swift */; };
+		C913C44B2502A0E500612E04 /* CountryPickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C913C4462502A0E400612E04 /* CountryPickerTableViewCell.swift */; };
+		C913C4572502A57600612E04 /* CountryPickerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C913C4562502A57600612E04 /* CountryPickerTableViewCell.xib */; };
+		C913C4582502A57600612E04 /* CountryPickerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C913C4562502A57600612E04 /* CountryPickerTableViewCell.xib */; };
+		C913C4592502A57600612E04 /* CountryPickerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C913C4562502A57600612E04 /* CountryPickerTableViewCell.xib */; };
+		C913C45A2502A57600612E04 /* CountryPickerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C913C4562502A57600612E04 /* CountryPickerTableViewCell.xib */; };
 		C9D81F822348025700B75AB7 /* PhoneNumberTextFieldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D81F812348025700B75AB7 /* PhoneNumberTextFieldTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -122,8 +132,9 @@
 		C6DF6C911D1B120400259F4B /* PhoneNumberKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PhoneNumberKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6DF6CA71D1B145300259F4B /* PhoneNumberKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhoneNumberKit.h; sourceTree = "<group>"; };
 		C6DF6CCC1D1B18B000259F4B /* PhoneNumberKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PhoneNumberKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C92BAF2525028D24001E0B8D /* CountryPickerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CountryPickerTableViewCell.swift; path = UI/Xib/CountryPickerTableViewCell.swift; sourceTree = "<group>"; };
-		C92BAF2625028D24001E0B8D /* CountryPickerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = CountryPickerTableViewCell.xib; path = UI/Xib/CountryPickerTableViewCell.xib; sourceTree = "<group>"; };
+		C913C435250293CE00612E04 /* CountryPickerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CountryPickerTableViewCell.swift; path = UI/CountryPickerTableViewCell.swift; sourceTree = "<group>"; };
+		C913C4462502A0E400612E04 /* CountryPickerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CountryPickerTableViewCell.swift; path = UI/CountryPickerTableViewCell.swift; sourceTree = "<group>"; };
+		C913C4562502A57600612E04 /* CountryPickerTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CountryPickerTableViewCell.xib; path = UI/CountryPickerTableViewCell.xib; sourceTree = "<group>"; };
 		C9D81F812348025700B75AB7 /* PhoneNumberTextFieldTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberTextFieldTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -221,12 +232,13 @@
 				34566C991BC112C500715E6B /* RegexManager.swift */,
 				3424187F1BB705B500EE70E7 /* PhoneNumber.swift */,
 				34AA66011BDD160B00467912 /* Constants.swift */,
+				C913C4462502A0E400612E04 /* CountryPickerTableViewCell.swift */,
 				3420CF5D1BE8959F00FAE34F /* Formatter.swift */,
+				C913C4562502A57600612E04 /* CountryPickerTableViewCell.xib */,
 				343B850A1C62A25600918E46 /* PartialFormatter.swift */,
 				343B850B1C62A25600918E46 /* PhoneNumberTextField.swift */,
 				5D14267C238F5842002DD197 /* CountryCodePickerViewController.swift */,
-				C92BAF2525028D24001E0B8D /* CountryPickerTableViewCell.swift */,
-				C92BAF2625028D24001E0B8D /* CountryPickerTableViewCell.xib */,
+				C913C435250293CE00612E04 /* CountryPickerTableViewCell.swift */,
 				342418811BB70F5200EE70E7 /* PhoneNumberParser.swift */,
 				1B0651161E2AD698006AE849 /* PhoneNumberFormatter.swift */,
 				11C2EF381D62BC3200052D44 /* NSRegularExpression+Swift.swift */,
@@ -443,7 +455,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C92BAF2825028D24001E0B8D /* CountryPickerTableViewCell.xib in Resources */,
+				C913C4572502A57600612E04 /* CountryPickerTableViewCell.xib in Resources */,
 				34CA34522380307300788D7D /* PhoneNumberMetadata.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -460,6 +472,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C913C4582502A57600612E04 /* CountryPickerTableViewCell.xib in Resources */,
 				A863BC9B23801ABC00088460 /* PhoneNumberMetadata.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -468,6 +481,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C913C4592502A57600612E04 /* CountryPickerTableViewCell.xib in Resources */,
 				A863BC9C23801ABC00088460 /* PhoneNumberMetadata.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -476,6 +490,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C913C45A2502A57600612E04 /* CountryPickerTableViewCell.xib in Resources */,
 				A863BC9D23801ABC00088460 /* PhoneNumberMetadata.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -487,7 +502,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C92BAF2725028D24001E0B8D /* CountryPickerTableViewCell.swift in Sources */,
+				C913C439250295FF00612E04 /* CountryPickerTableViewCell.swift in Sources */,
 				11C2EF391D62BC3200052D44 /* NSRegularExpression+Swift.swift in Sources */,
 				342418821BB70F5200EE70E7 /* PhoneNumberParser.swift in Sources */,
 				346922671BC01DCC0023482F /* MetadataManager.swift in Sources */,
@@ -502,6 +517,7 @@
 				342418801BB705B500EE70E7 /* PhoneNumber.swift in Sources */,
 				1B0651171E2AD698006AE849 /* PhoneNumberFormatter.swift in Sources */,
 				34AA66021BDD160B00467912 /* Constants.swift in Sources */,
+				C913C4482502A0E500612E04 /* CountryPickerTableViewCell.swift in Sources */,
 				342548F01BE7EED500FBE524 /* MetadataTypes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -521,11 +537,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C913C43D25029ACF00612E04 /* CountryPickerTableViewCell.swift in Sources */,
 				C6DF6C5D1D1B09DD00259F4B /* PhoneNumberKit.swift in Sources */,
 				C6B53DA71D94508400E607DD /* NSRegularExpression+Swift.swift in Sources */,
 				C6DF6C5A1D1B09DD00259F4B /* ParseManager.swift in Sources */,
 				C6DF6C5E1D1B09DD00259F4B /* PhoneNumberParser.swift in Sources */,
 				1B1A4DD723007580006AE849 /* PhoneNumberFormatter.swift in Sources */,
+				C913C4492502A0E500612E04 /* CountryPickerTableViewCell.swift in Sources */,
 				C6DF6C551D1B09DD00259F4B /* Formatter.swift in Sources */,
 				1B80904E2300B4DC006AE849 /* MetadataParsing.swift in Sources */,
 				C6DF6C5C1D1B09DD00259F4B /* PhoneNumber.swift in Sources */,
@@ -541,11 +559,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C913C43E25029ACF00612E04 /* CountryPickerTableViewCell.swift in Sources */,
 				C6DF6CBB1D1B159A00259F4B /* PhoneNumberKit.swift in Sources */,
 				C6B53DA51D944F8000E607DD /* NSRegularExpression+Swift.swift in Sources */,
 				C6DF6CB81D1B159A00259F4B /* ParseManager.swift in Sources */,
 				C6DF6CBC1D1B159A00259F4B /* PhoneNumberParser.swift in Sources */,
 				1B1A4DD9230075A6006AE849 /* PhoneNumberFormatter.swift in Sources */,
+				C913C44A2502A0E500612E04 /* CountryPickerTableViewCell.swift in Sources */,
 				C6DF6CB31D1B159A00259F4B /* Formatter.swift in Sources */,
 				1B80904F2300B4DC006AE849 /* MetadataParsing.swift in Sources */,
 				C6DF6CBA1D1B159A00259F4B /* PhoneNumber.swift in Sources */,
@@ -561,11 +581,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C913C43F25029AD200612E04 /* CountryPickerTableViewCell.swift in Sources */,
 				C6B53DA61D944F8000E607DD /* NSRegularExpression+Swift.swift in Sources */,
 				C6DF6CDE1D1B18D800259F4B /* PhoneNumberKit.swift in Sources */,
 				C6DF6CDB1D1B18D800259F4B /* ParseManager.swift in Sources */,
 				C6DF6CDF1D1B18D800259F4B /* PhoneNumberParser.swift in Sources */,
 				C6DF6CD61D1B18D800259F4B /* Formatter.swift in Sources */,
+				C913C44B2502A0E500612E04 /* CountryPickerTableViewCell.swift in Sources */,
 				C6DF6CDD1D1B18D800259F4B /* PhoneNumber.swift in Sources */,
 				C6DF6CD51D1B18D800259F4B /* Constants.swift in Sources */,
 				1B8090502300B4DD006AE849 /* MetadataParsing.swift in Sources */,

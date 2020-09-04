@@ -16,6 +16,7 @@ open class PhoneNumberTextField: UITextField, UITextFieldDelegate {
     public let phoneNumberKit: PhoneNumberKit
 
     public lazy var flagButton = UIButton()
+    private var openPicker = UIButton()
 
     /// Override setText so number will be automatically formatted when setting text by code
     open override var text: String? {
@@ -130,6 +131,17 @@ open class PhoneNumberTextField: UITextField, UITextFieldDelegate {
         set { _withDefaultPickerUI = newValue }
     }
 
+    public var isOnlyCountryCode = false {
+        didSet {
+            openPicker.frame = self.frame
+            openPicker.backgroundColor = .clear
+            self.superview?.addSubview(openPicker)
+            if #available(iOS 11.0, *) {
+                openPicker.addTarget(self, action: #selector(didPressFlagButton), for: .touchUpInside)
+            }
+        }
+    }
+    
     public var isPartialFormatterEnabled = true
 
     public var maxDigits: Int? {
@@ -284,6 +296,7 @@ open class PhoneNumberTextField: UITextField, UITextFieldDelegate {
         self.flagButton.setTitle(flag + " ", for: .normal)
         let fontSize = (font ?? UIFont.preferredFont(forTextStyle: .body)).pointSize
         self.flagButton.titleLabel?.font = UIFont.systemFont(ofSize: fontSize)
+        self.text = internationalPrefix(for: self.currentRegion)
     }
 
     open func updatePlaceholder() {
@@ -319,6 +332,7 @@ open class PhoneNumberTextField: UITextField, UITextFieldDelegate {
             nav.pushViewController(vc, animated: true)
         } else {
             let nav = UINavigationController(rootViewController: vc)
+            nav.navigationBar.tintColor = UIColor(red: 0/255, green: 214/255, blue: 193/255, alpha: 1)
             containingViewController?.present(nav, animated: true)
         }
     }
@@ -486,12 +500,11 @@ open class PhoneNumberTextField: UITextField, UITextFieldDelegate {
 extension PhoneNumberTextField: CountryCodePickerDelegate {
 
     func countryCodePickerViewControllerDidPickCountry(_ country: CountryCodePickerViewController.Country) {
-        text = isEditing ? "+" + country.prefix : ""
+        text = "+" + country.prefix
         _defaultRegion = country.code
         partialFormatter.defaultRegion = country.code
         updateFlag()
         updatePlaceholder()
-
         if let nav = containingViewController?.navigationController, !PhoneNumberKit.CountryCodePicker.forceModalPresentation {
             nav.popViewController(animated: true)
         } else {
