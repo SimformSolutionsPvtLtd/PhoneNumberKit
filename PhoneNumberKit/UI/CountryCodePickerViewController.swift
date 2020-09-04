@@ -20,7 +20,7 @@ public class CountryCodePickerViewController: UITableViewController {
     var shouldRestoreNavigationBarToHidden = false
 
     var hasCurrent = true
-    var hasCommon = true
+    var hasCommon = false
 
     lazy var allCountries = phoneNumberKit
         .allCountries()
@@ -89,7 +89,7 @@ public class CountryCodePickerViewController: UITableViewController {
     func commonInit() {
         self.title = NSLocalizedString("PhoneNumberKit.CountryCodePicker.Title", value: "Choose your country", comment: "Title of CountryCodePicker ViewController")
 
-        tableView.register(Cell.self, forCellReuseIdentifier: Cell.reuseIdentifier)
+        tableView.register(CountryPickerTableViewCell.self, forCellReuseIdentifier: CountryPickerTableViewCell.reuseIdentifier)
         searchController.searchResultsUpdater = self
         searchController.obscuresBackgroundDuringPresentation = false
         searchController.searchBar.backgroundColor = .clear
@@ -130,16 +130,12 @@ public class CountryCodePickerViewController: UITableViewController {
     }
 
     public override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: Cell.reuseIdentifier, for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: CountryPickerTableViewCell.reuseIdentifier, for: indexPath) as? CountryPickerTableViewCell
         let country = self.country(for: indexPath)
-
-        cell.textLabel?.text = country.prefix + " " + country.flag
-        cell.detailTextLabel?.text = country.name
-
-        cell.textLabel?.font = .preferredFont(forTextStyle: .callout)
-        cell.detailTextLabel?.font = .preferredFont(forTextStyle: .body)
-
-        return cell
+        cell?.lblCountryCode.text = country.prefix
+        cell?.lblCountryName.text = country.name
+        cell?.flag.text = country.flag
+        return cell!
     }
 
     public override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
